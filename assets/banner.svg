@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Linear Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <!-- Accent Gradient for Text -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Background Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.7" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.18) translate(-15px, 12px); opacity: 0.65; }
+    }
+    @keyframes pulseOrb2 {
+      0%, 100% { transform: scale(1.1) translate(0, 0); opacity: 0.3; }
+      50% { transform: scale(0.92) translate(20px, -15px); opacity: 0.55; }
+    }
+    @keyframes floatPill {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+    @keyframes floatPillLag {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(7px); }
+    }
+    @keyframes dashStream {
+      to { stroke-dashoffset: -80; }
+    }
+
+    .orb-1 {
+      animation: pulseOrb 8s ease-in-out infinite;
+      transform-origin: 200px 100px;
+    }
+    .orb-2 {
+      animation: pulseOrb2 9s ease-in-out infinite;
+      transform-origin: 1000px 300px;
+    }
+    .pill-group-1 {
+      animation: floatPill 5s ease-in-out infinite;
+    }
+    .pill-group-2 {
+      animation: floatPillLag 6s ease-in-out infinite;
+    }
+    .pulse-line {
+      stroke-dasharray: 8 12;
+      animation: dashStream 4s linear infinite;
+    }
+    .banner-title {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      letter-spacing: -0.5px;
+    }
+    .banner-sub {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 19px;
+      fill: #94a3b8;
+    }
+    .banner-tag {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+    .pill-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+    }
+  </style>
+
+  <!-- Deep Dark Space Canvas -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+
+  <!-- Animated Glowing Nebulas in Background (Behind foreground text) -->
+  <g>
+    <circle class="orb-1" cx="220" cy="110" r="160" fill="#38bdf8" filter="url(#glow)" />
+    <circle class="orb-2" cx="980" cy="300" r="180" fill="#a855f7" filter="url(#glow)" />
+    <circle class="orb-1" cx="600" cy="390" r="120" fill="#6366f1" filter="url(#glow)" />
+  </g>
+
+  <!-- Technical Grid Overlay -->
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Border Frame -->
+  <rect x="2" y="2" width="1196" height="416" rx="14" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.6" />
+
+  <!-- Connecting Dynamic Data Streams (Background layer) -->
+  <path class="pulse-line" d="M 80 80 Q 300 20 600 80 T 1120 70" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-opacity="0.5" />
+  <path class="pulse-line" d="M 80 340 Q 400 390 700 340 T 1120 350" fill="none" stroke="#c084fc" stroke-width="1.8" stroke-opacity="0.4" />
+
+  <!-- Foreground Main Branding Content -->
+  <g transform="translate(600, 150)" text-anchor="middle">
+    <!-- Category Pill Badge -->
+    <rect x="-180" y="-72" width="360" height="34" rx="17" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.8" />
+    <circle cx="-152" cy="-55" r="5" fill="#10b981" />
+    <text x="5" y="-50" text-anchor="middle" class="banner-tag" fill="#38bdf8">☁️ CURATED CLOUD-NATIVE ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="0" y="5" class="banner-title" fill="url(#textGrad)">Awesome Cloud-Native API Dev Environments</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="44" class="banner-sub">Browser IDEs • Cloud Dev Environments • Instant Mocking &amp; Microservice Deployments</text>
+  </g>
+
+  <!-- Interactive Dynamic Floating Feature Pills (Lower Foreground, perfectly spaced) -->
+  <g class="pill-group-1" transform="translate(0, 0)">
+    <!-- Pill 1: Cloud IDEs -->
+    <g transform="translate(140, 275)">
+      <rect width="195" height="48" rx="24" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.7" filter="url(#softGlow)" />
+      <text x="97" y="29" text-anchor="middle" class="pill-text">⚡ Cloud IDEs &amp; CDEs</text>
+    </g>
+
+    <!-- Pill 2: API Mocking & Clients -->
+    <g transform="translate(370, 275)">
+      <rect width="215" height="48" rx="24" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.2" stroke-opacity="0.7" filter="url(#softGlow)" />
+      <text x="107" y="29" text-anchor="middle" class="pill-text">🚀 API Clients &amp; Testing</text>
+    </g>
+
+    <!-- Pill 3: Instant Deployments -->
+    <g transform="translate(620, 275)">
+      <rect width="205" height="48" rx="24" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.7" filter="url(#softGlow)" />
+      <text x="102" y="29" text-anchor="middle" class="pill-text">📦 Instant Deployments</text>
+    </g>
+
+    <!-- Pill 4: Open-Source First -->
+    <g transform="translate(860, 275)">
+      <rect width="200" height="48" rx="24" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1.2" stroke-opacity="0.7" filter="url(#softGlow)" />
+      <text x="100" y="29" text-anchor="middle" class="pill-text">🛡️ 100% Self-Hostable</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Highlights -->
+  <g class="pill-group-2">
+    <circle cx="100" cy="370" r="3" fill="#38bdf8" />
+    <circle cx="350" cy="380" r="2.5" fill="#818cf8" />
+    <circle cx="850" cy="375" r="3" fill="#c084fc" />
+    <circle cx="1100" cy="365" r="2.5" fill="#34d399" />
+  </g>
+</svg>

@@ -1,31 +1,56 @@
-# Awesome-Cloud-Native-API-Development-Environment
+# ☁️ Awesome-Cloud-Native-API-Development-Environment
 
-## Top Cloud-Native API Development Environment Ecosystem
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Cloud-Native API Development Environment Banner" width="100%">
+</p>
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Browser-Based API Tooling, Cloud IDEs & Instant Deployment Workflows*  
-**Last updated: March 2026**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-API-Development-Environment/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Native-API-Development-Environment?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-API-Development-Environment/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Native-API-Development-Environment?style=flat-square&logo=github&color=blue" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-API-Development-Environment/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Cloud-Native API Development Environments**. These tools provide browser-accessible workspaces for designing, testing, and deploying APIs—covering API clients, cloud IDEs, instant hosting platforms, and collaborative coding environments that eliminate local environment setup while enabling consistent, reproducible API development workflows.
+---
 
-**Examples** include Postman Cloud Platform, GitHub Codespaces, Gitpod, Replit, Vercel, AWS Cloud9, CodeSandbox, StackBlitz, Glitch, and Render (the category leaders).
+## 🚀 Top Cloud-Native API Development Environment Ecosystem
 
-**Open-source emphasis**: This section highlights active projects for self-hosted API development environments, open-source cloud IDEs, and browser-based code editors—ideal for developers, platform engineers, and teams seeking transparent, vendor-neutral tooling without per-seat or per-hour cloud billing surprises.
+**A Curated List of SaaS Platforms & Open-Source Tools for Cloud-Native API Engineering**  
+*Comprehensive directory of Browser-Based API Tooling, Cloud Development Environments (CDEs), Web IDEs, Microservice Mocking, and Instant Cloud Deployments.*  
+**📅 Last updated: March 2026**
 
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+This repository provides an authoritative, SEO-optimized knowledge base tracking notable **SaaS platforms** and **open-source projects** in the **Cloud-Native API Development Environment** space. These modern developer tools offer zero-setup, browser-accessible, and containerized workspaces for designing, mocking, inspecting, testing, and deploying REST, GraphQL, gRPC, and WebSocket APIs—eliminating the "it works on my machine" problem while streamlining developer workflows.
 
-## Table of Contents
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saashosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+---
 
-## Sector Overview & Market Dynamics
+## 📑 Table of Contents
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Key Frameworks for Building Custom Cloud IDEs](#️-key-frameworks-for-building-custom-cloud-ides)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
 
-The global Cloud-Native API and Developer Environment market is estimated at approximately **$6.2B - $8.5B**, growing at a CAGR of ~22-26% driven by remote engineering, cloud dev environments (CDEs), and AI-assisted API creation workflows. The sector is **moderately fragmented**: cloud giants (Microsoft/GitHub, AWS) anchor foundational compute and repository ecosystems, while specialized category leaders (Postman in API testing/design, Vercel/Render in deployment, and Replit/Gitpod in cloud runtimes) compete vigorously alongside offline-first and self-hosted open-source alternatives.
+---
 
-## SaaS/Hosted Platforms
+## 📊 Sector Overview & Market Dynamics
+
+The global Cloud-Native API and Developer Environment market is estimated at approximately **$6.2B - $8.5B**, growing at a robust CAGR of **~22%–26%**, accelerated by the rapid industry shift toward Cloud Development Environments (CDEs), remote developer platforms, AI-native programming assistants, and API-first architectures. 
+
+The sector displays **moderate fragmentation**:
+- **Ecosystem Hyperscalers:** Microsoft/GitHub (Codespaces) and Amazon AWS (Cloud9) provide foundational, compute-tied cloud dev workspaces anchored by massive infrastructure scale.
+- **Specialized Category Champions:** High-growth platform leaders dominate specific lifecycle phases—Postman in collaborative API design and testing, Vercel and Render in zero-config serverless deployments, and Replit in real-time collaborative cloud runtime environments.
+- **Open-Source & Offline-First Contenders:** Developer-sovereignty solutions such as Hoppscotch, Bruno, LocalStack, and Coder are surging in adoption as enterprise teams push back against seat licenses, egress fees, and vendor lock-in.
+
+---
+
+## 🏢 SaaS / Hosted Platforms
+
+A breakdown of top hosted developer platforms with verified starting pricing, valuation, and exact free tier/trial limits:
 
 | Product | Scale (Valuation / Revenue) | Description | Pricing (Starting) | Free Tier / Trial Limits |
 |---------|-----------------------------|-------------|-------------------|--------------------------|
@@ -40,7 +65,11 @@ The global Cloud-Native API and Developer Environment market is estimated at app
 | **[StackBlitz](https://stackblitz.com/)** | **~$100M** valuation | Browser-native IDE running entirely on client WebContainers (in-browser Node.js runtime) with instant startup and offline capability. | Practitioner / Pro plan at $15/user/month ($12/user/month billed annually) | **Personal (free)**: unlimited public projects, instant dev server booting via WebContainers, 1 MB file upload limit, and direct GitHub repo synchronization |
 | **[Glitch](https://glitch.com/)** | **~$50M** valuation (subsidiary of Fastly) | Lightweight browser-based web application and API creation environment designed for fast remixing and live collaboration. | Pro plan at $10/month ($96 billed annually at $8/month) | **Free**: public project hosting, 200 MB disk storage per app, 512 MB RAM, full code editor; apps sleep after 5 minutes of idle time (up to 4,000 project hours/month) |
 
-## Open-Source GitHub Projects
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Self-hosted, vendor-neutral tools and runtimes sorted by GitHub stargazers count:
 
 | Project | Star Badge | Description |
 |---------|------------|-------------|
@@ -58,22 +87,57 @@ The global Cloud-Native API and Developer Environment market is estimated at app
 | **[Eclipse Che](https://github.com/eclipse-che/che)** | [![Stars](https://img.shields.io/github/stars/eclipse-che/che?style=social&color=white)](https://github.com/eclipse-che/che/stargazers) | Kubernetes-native cloud development environment platform that runs containerized IDE workspaces and devfiles on Red Hat OpenShift and Kubernetes. |
 | **[OpenVSCode Server](https://github.com/gitpod-io/openvscode-server)** | [![Stars](https://img.shields.io/github/stars/gitpod-io/openvscode-server?style=social&color=white)](https://github.com/gitpod-io/openvscode-server/stargazers) | Production-grade upstream VS Code running directly in a web browser, maintained by Gitpod for self-hosted containerized development environments. |
 
-## How to Contribute
+---
 
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
+## 🛠️ Key Frameworks for Building Custom Cloud IDEs
 
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Cloud development environments execute arbitrary code and expose terminal access; enforce proper authentication, network isolation, and workspace cleanup to prevent resource abuse.
-- Core-hour billing (GitHub Codespaces) and credit-based billing (CodeSandbox, Replit) can consume quotas faster than expected on multi-core machines; idle timeout settings and manual stop discipline are essential to stay within free tier limits. Free tier limits change frequently—verify against vendor pricing pages before committing.
+To build a customized, self-hosted Cloud-Native API development ecosystem, consider combining:
+- **Editor Layer:** [code-server](https://github.com/coder/code-server) or [OpenVSCode Server](https://github.com/gitpod-io/openvscode-server) for full in-browser VS Code ergonomics.
+- **IDE Framework:** [Eclipse Theia](https://github.com/eclipse-theia/theia) for white-label or deeply customized tool suites.
+- **API Testing & Prototyping:** [Hoppscotch](https://github.com/hoppscotch/hoppscotch) or [Bruno](https://github.com/usebruno/bruno) for collaborative request authoring and Git-backed collections.
+- **Local Cloud Emulation:** [LocalStack](https://github.com/localstack/localstack) for offline AWS API testing.
+- **Workspace Orchestration:** [Coder](https://github.com/coder/coder) or [DevPod](https://github.com/loft-sh/devpod) for automated container and VM lifecycle management across Kubernetes or hybrid infrastructure.
 
 ---
 
-**Made for developers, platform engineers, and teams building cloud-native API workflows.**  
-Let's make cloud API development environments more open, accessible, and cost-transparent.
+## 🤝 How to Contribute
+
+Contributions are warmly welcome! Help keep this ecosystem guide accurate and comprehensive:
+
+1. 🍴 **Fork** this repository.
+2. 🌿 **Create a branch** for your updates (`git checkout -b feature/add-new-tool`).
+3. 📝 **Add or edit entries** in `README.md` keeping formatting consistent (Name, Description, Pricing, Limits, Badges).
+4. 📬 **Submit a Pull Request** with a clear explanation of changes.
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated list valuable for your daily engineering workflow or team architecture, please consider showing your support:
+
+- 🌟 **Star** this repository on GitHub to boost visibility.
+- 🍴 **Fork** and share it with fellow developers and platform engineering teams.
+- ☕ **Buy a Coffee / Sponsor**: Support ongoing maintenance and curation on the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support keeps this directory independent, accurate, and actively maintained! 🙌
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Cloud-Native-API-Development-Environment&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Cloud-Native-API-Development-Environment&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not a paid endorsement.
+- Cloud development environments execute arbitrary code and expose terminal access; enforce proper authentication, network isolation, and workspace cleanup to prevent resource abuse.
+- Core-hour billing (GitHub Codespaces) and credit-based billing (CodeSandbox, Replit) can consume quotas quickly on multi-core machines; configure idle timeout settings to avoid unexpected charges. Always verify current tiers on vendor pricing pages.
+
+---
+
+<p align="center">
+  <b>Built with ❤️ for developers, platform engineers, and cloud architects worldwide.</b><br>
+  <sub>Let's make cloud API development environments more open, accessible, and cost-transparent.</sub>
+</p>
